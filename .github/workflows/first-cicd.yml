@@ -1,0 +1,11 @@
+name: my first git hub action
+
+on: [push]
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    strategy: 
+      metrix:
+        python-version:[3.8, 3.9]
+        
